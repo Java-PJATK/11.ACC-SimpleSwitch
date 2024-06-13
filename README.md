@@ -30,7 +30,6 @@ switch (expr) {
 The value of `expr` must be either of an integral type (but not `long`), or a reference to a `String`, or an enumeration constant (which we will introduce later). Symbols `val` stand for values with which the value of `expr` will be compared (in the specified order). They have to be literal values (not variables). If the value of `expr` is equal to any of `vals`, the code in the corresponding arm is executed and then execution continues (falls through) with all the arms below; to avoid it, use `break`, which transfers control flow out of the switch block (sometimes this "falling through" may be just what we want, as in the example below).
 
 At the end of this example, we used `default` arm, where we don’t make any comparisons: this will be the arm selected if all other comparisons yield false. The `default` clause is optional and doesn’t have to appear as the last. For example:
-```
 
 ## Listing 11 ACC-SimpleSwitch/SimpleSwitch.java Page 32
 
